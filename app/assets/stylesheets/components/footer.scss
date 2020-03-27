@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  .footer-bot {
+    height: 5vh;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 10vh;
+    color: white;
+    background-color: $black-trans;
+    width: 100%;
+    .footer-logo {
+      .footer-left {
+        display: flex;
+        i {
+          font-size: 3.2em;
+          padding-right: 0.5em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        padding: 0.5em;
+        font-size: 2em;
+      }
+    }
+  }
+}
