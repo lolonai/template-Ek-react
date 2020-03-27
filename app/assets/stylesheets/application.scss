@@ -1,9 +1,15 @@
+@import "colors";
+@import "containers/index";
 @import "components/index";
 @import "articles";
-@import "pages";
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap");
+/* Use the following CSS rules to specify these families:
+font-family: 'Open Sans', sans-serif; 
+-----------------------------------------------------------------------------*/
 
 /** NORMALIZE V8.0.1
 
@@ -14,6 +20,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: "Open Sans", regular;
 }
 
 /* Sections

@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  .navbar-top {
+    height: 5vh;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $black-trans;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 70%;
+    height: 10vh;
+    .navbar-logo {
+      font-size: 3.2em;
+    }
+    p {
+      font-size: 1em;
+      padding: 0.5em;
+    }
+    .navbar-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      p {
+        border-left: solid 1px white;
+        width: 4vw;
+        &:last-child {
+          border-right: solid 1px white;
+        }
+      }
+    }
+    .navbar-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+  }
+}
