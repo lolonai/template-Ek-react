@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get 'articles/edit'
   get 'articles/delete'
   root 'pages#index'
+
+  match '*path', to: 'pages#index', via: :all
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
