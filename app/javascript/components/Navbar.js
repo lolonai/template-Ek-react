@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 import Home from "../containers/Home";
 import Blog from "../containers/Blog";
 import Apropos from "../containers/Apropos";
@@ -19,19 +19,27 @@ const Navbar = () => {
               </div>
               <div className="navbar-menu">
                 <p>
-                  <Link to="/">Accueil</Link>
+                  <NavLink exact to="/" activeClassName="selected">
+                    Accueil
+                  </NavLink>
                 </p>
 
                 <p>
-                  <Link to="/Blog">Blog</Link>
+                  <NavLink to="/Blog" activeClassName="selected">
+                    Blog
+                  </NavLink>
                 </p>
 
                 <p>
-                  <Link to="/Apropos">A propos</Link>
+                  <NavLink to="/Apropos" activeClassName="selected">
+                    A propos
+                  </NavLink>
                 </p>
 
                 <p>
-                  <Link to="/Contact">Contact</Link>
+                  <NavLink to="/Contact" activeClassName="selected">
+                    Contact
+                  </NavLink>
                 </p>
               </div>
 
