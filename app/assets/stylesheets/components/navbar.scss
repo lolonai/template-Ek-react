@@ -31,9 +31,12 @@
       text-align: center;
       p {
         border-left: solid 1px white;
-        width: 4vw;
+        width: 6vw;
         &:last-child {
           border-right: solid 1px white;
+        }
+        .selected {
+          color: red;
         }
       }
     }
